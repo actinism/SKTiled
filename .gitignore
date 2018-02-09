@@ -1,6 +1,5 @@
-Sources/SKTiled+Debug.swift
 Resources/shaders/
-Resources/test/
+Resources/User/
 docs/jazzy_output/
 *.psd
 *.html
@@ -8,3 +7,5 @@ docs/jazzy_output/
 *.css
 SKTiled.playground/
 SKTiled.xcworkspace/
+Notes.md
+.swiftlint.yml

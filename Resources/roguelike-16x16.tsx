@@ -9,20 +9,19 @@
   <terrain name="grass-edge" tile="914"/>
  </terraintypes>
  <tile id="0" probability="0.5">
-     <properties>
-         <property name="type" value="water"/>
-     </properties>
+  <properties>
+   <property name="type" value="water"/>
+  </properties>
  </tile>
  <tile id="1" probability="0.5">
-     <properties>
-         <property name="type" value="water"/>
-     </properties>
+  <properties>
+   <property name="type" value="water"/>
+  </properties>
  </tile>
- <tile id="2" terrain=",,,0">
- </tile>
+ <tile id="2" terrain=",,,0"/>
  <tile id="3" terrain=",,0,0">
   <properties>
-    <property name="type" value="water"/>
+   <property name="type" value="water"/>
   </properties>
  </tile>
  <tile id="4" terrain=",,0,">
@@ -50,10 +49,10 @@
    <property name="type" value="dirt"/>
   </properties>
  </tile>
- <tile id="13">
+ <tile id="13" type="fire">
   <animation>
-   <frame tileid="13" duration="100"/>
-   <frame tileid="14" duration="100"/>
+   <frame tileid="13" duration="200"/>
+   <frame tileid="14" duration="200"/>
   </animation>
  </tile>
  <tile id="57" terrain="0,0,0,">
@@ -68,7 +67,7 @@
  </tile>
  <tile id="59" terrain=",0,,0">
   <properties>
-    <property name="type" value="water"/>
+   <property name="type" value="water"/>
   </properties>
  </tile>
  <tile id="60" terrain="0,0,0,0">
@@ -191,25 +190,25 @@
    <property name="type" value="water"/>
   </properties>
  </tile>
- <tile id="396">
+ <tile id="396" type="fire">
   <animation>
-   <frame tileid="396" duration="100"/>
-   <frame tileid="397" duration="100"/>
+   <frame tileid="396" duration="200"/>
+   <frame tileid="397" duration="200"/>
   </animation>
  </tile>
  <tile id="416">
   <animation>
-   <frame tileid="416" duration="100"/>
-   <frame tileid="417" duration="100"/>
+   <frame tileid="416" duration="175"/>
+   <frame tileid="417" duration="175"/>
   </animation>
  </tile>
  <tile id="453">
   <animation>
-   <frame tileid="453" duration="100"/>
-   <frame tileid="454" duration="100"/>
+   <frame tileid="453" duration="200"/>
+   <frame tileid="454" duration="200"/>
   </animation>
  </tile>
- <tile id="470">
+ <tile id="470" type="fire">
   <animation>
    <frame tileid="470" duration="200"/>
    <frame tileid="471" duration="200"/>
@@ -217,14 +216,14 @@
  </tile>
  <tile id="473">
   <animation>
-   <frame tileid="473" duration="100"/>
-   <frame tileid="474" duration="100"/>
+   <frame tileid="473" duration="175"/>
+   <frame tileid="474" duration="175"/>
   </animation>
  </tile>
- <tile id="510">
+ <tile id="510" type="fire">
   <animation>
-   <frame tileid="510" duration="100"/>
-   <frame tileid="511" duration="100"/>
+   <frame tileid="510" duration="200"/>
+   <frame tileid="511" duration="200"/>
   </animation>
  </tile>
  <tile id="518" terrain="1,1,1,"/>
@@ -262,28 +261,28 @@
    <property name="tree" value="true"/>
   </properties>
  </tile>
- <tile id="541">
+ <tile id="541" type="flower">
   <animation>
    <frame tileid="1795" duration="350"/>
    <frame tileid="541" duration="350"/>
    <frame tileid="1852" duration="350"/>
   </animation>
  </tile>
- <tile id="542">
+ <tile id="542" type="flower">
   <animation>
    <frame tileid="1796" duration="350"/>
    <frame tileid="542" duration="350"/>
    <frame tileid="1853" duration="350"/>
   </animation>
  </tile>
- <tile id="543">
+ <tile id="543" type="flower">
   <animation>
    <frame tileid="1797" duration="350"/>
    <frame tileid="543" duration="350"/>
    <frame tileid="1854" duration="350"/>
   </animation>
  </tile>
- <tile id="544">
+ <tile id="544" type="flower">
   <animation>
    <frame tileid="1798" duration="350"/>
    <frame tileid="544" duration="350"/>
@@ -292,8 +291,8 @@
  </tile>
  <tile id="567">
   <animation>
-   <frame tileid="567" duration="100"/>
-   <frame tileid="568" duration="100"/>
+   <frame tileid="567" duration="200"/>
+   <frame tileid="568" duration="200"/>
   </animation>
  </tile>
  <tile id="575" terrain="1,,1,1"/>
@@ -301,10 +300,10 @@
  <tile id="577" terrain=",1,,1"/>
  <tile id="578" terrain="1,1,1,1"/>
  <tile id="579" terrain="1,,1,"/>
- <tile id="624">
+ <tile id="624" type="fire">
   <animation>
-   <frame tileid="510" duration="100"/>
-   <frame tileid="511" duration="100"/>
+   <frame tileid="624" duration="200"/>
+   <frame tileid="625" duration="200"/>
   </animation>
  </tile>
  <tile id="634" terrain=",1,,"/>
@@ -497,6 +496,24 @@
  <tile id="1424">
   <properties>
    <property name="type" value="water"/>
+  </properties>
+ </tile>
+ <tile id="1767">
+  <properties>
+   <property name="walkable" type="bool" value="true"/>
+   <property name="weight" type="float" value="1"/>
+  </properties>
+ </tile>
+ <tile id="1768">
+  <properties>
+   <property name="walkable" type="bool" value="true"/>
+   <property name="weight" type="float" value="1"/>
+  </properties>
+ </tile>
+ <tile id="1769">
+  <properties>
+   <property name="walkable" type="bool" value="true"/>
+   <property name="weight" type="float" value="200"/>
   </properties>
  </tile>
 </tileset>
